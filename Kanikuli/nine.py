@@ -17,7 +17,7 @@ for k in range(len(f)):
         if f[k][n] == f[k][n + 1]:
             flag = False
             break
-    if flag:  # True
+    if flag is True:  # True
         for n in range(5):
             if f[k][n] % 2 == 0:
                 ch.append(f[k][n])
