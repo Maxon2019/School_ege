@@ -82,4 +82,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()'''
-print(bin(16))
+n = 115
+print(list(map(int, list(str(n)))))
