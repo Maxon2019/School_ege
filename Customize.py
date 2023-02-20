@@ -7,7 +7,7 @@ import argparse
 
 
 def convert(size: tuple, box: list):
-    """Takes as input:  (width, height) of an image
+    """Takes as input.txt:  (width, height) of an image
                         (xmin, ymin, xmax, ymax) of the bounding box
        and returns (x, y, w, h) of the bounding box in yolo format.
     """
@@ -60,8 +60,8 @@ def xml_to_txt(input_path: str, output_path: str):
 def parser() -> None:
     parser = argparse.ArgumentParser(
         description="Converts .xlm annotations into .txt files that conform to yolo format.")
-    parser.add_argument("--input", type=str, default="",
-                        help="The path of the input folder that contains the .png images with their corresponding txt annotations.")
+    parser.add_argument("--input.txt", type=str, default="",
+                        help="The path of the input.txt folder that contains the .png images with their corresponding txt annotations.")
     parser.add_argument("--output", type=str, default="",
                         help="The path of the output folder in which .txt annotations will be saved.")
     return parser.parse_args()
@@ -69,7 +69,7 @@ def parser() -> None:
 
 def check_arguments_errors(args: argparse.Namespace) -> None:
     if not os.path.exists(args.input):
-        raise (ValueError(f"Invalid input folder path: {os.path.abspath(args.input)}"))
+        raise (ValueError(f"Invalid input.txt folder path: {os.path.abspath(args.input)}"))
     if not os.path.exists(args.output):
         raise (ValueError(f"Invalid output folder path: {os.path.abspath(args.output)}"))
 

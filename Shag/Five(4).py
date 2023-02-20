@@ -1,11 +1,11 @@
-"""n = int(input())
+"""n = int(input.txt())
 
 mat = [0] * n
 
 sum_str = [0] * n
 sum_sto = [0] * n
 for i in range(n):
-    mat[i] = list(map(int, input().split()))
+    mat[i] = list(map(int, input.txt().split()))
     sum_str[i] = sum(mat[i])
 print(mat,'\n',sum_str)
 

@@ -54,14 +54,14 @@ def show_bounding_boxes(dir_path: str) -> None:
 def parser() -> None:
     parser = argparse.ArgumentParser(
         description="Display Bounding-Boxes on png images with yolo format (<label> <x_center> <y_center> <width> <height>).")
-    parser.add_argument("--input", type=str, default="",
+    parser.add_argument("--input.txt", type=str, default="",
                         help="The path of the folder that contains the png images with their corresponding txt annotations.")
     return parser.parse_args()
 
 
 def check_arguments_errors(args: argparse.Namespace) -> None:
     if not os.path.exists(args.input):
-        raise (ValueError("Invalid input folder path: {}".format(os.path.abspath(args.input))))
+        raise (ValueError("Invalid input.txt folder path: {}".format(os.path.abspath(args.input))))
 
 
 def main() -> None:

@@ -12,7 +12,7 @@ while s.find('111') != -1:
 
 print(s)
 
-'''n = int(input())
+'''n = int(input.txt())
 k = 0
 s = 0
 while n > 0: # 4
@@ -35,7 +35,7 @@ k = 0
 m = []
 N = 5
 for i in range(0, N):
-    a.append(int(input()))
+    a.append(int(input.txt()))
     if a[i] % 3 != 0 and a[i] % 2 == 0:
         k += 1
     elif a[i] % 3 == 0 and a[i] % 2 == 1:
